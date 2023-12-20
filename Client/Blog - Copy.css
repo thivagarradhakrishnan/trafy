@@ -1,0 +1,208 @@
+/* ----------------------------------------------Subscribe-section-------------------------------------------------------------- */
+
+.Subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 265px;
+    max-width: 688px;
+    width: 90%;
+    border-radius: 8px;
+    background: #FFF;
+    margin: auto; 
+}
+
+.heading {
+    width: 364px;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+    top: 25px;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container
+{
+    width: 90%;
+    height: 265px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    margin-top: 40px;
+}
+
+.box input {
+    width: 486px; 
+    height: 32px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #ACA3A3;
+    background: rgba(217, 212, 212, 0.34);
+    margin-bottom: 24px;
+}
+.box input::placeholder{
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.box button {
+    width: 132px;
+    height: 32px;
+
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+} 
+.box button:hover
+{
+    background: #333;
+}
+
+/* ----------------------------------------------Subscribe-responsive-------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .Subscribe {
+        width: 90%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .box input{
+        width: 200%;
+    }
+    .box button{
+        width: auto;
+        padding: 8px;
+        font-size: 14px;
+
+    }
+    .heading {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .Subscribe {
+        width: 90%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .box input {
+        width: 150%;
+    }
+    .box button{
+        width: auto;
+        padding: 8px;
+        font-size: 14px;
+
+    }
+
+    .heading {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+/* ----------------------------------------------Related-Articles-------------------------------------------------------------- */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 24px 0;
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+}
+
+
+.card img {
+    width: 288px;
+    height: 152px;
+    border: 1px solid black;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 8px;
+}
+
+.product-heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+    .cards-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        /* margin-right: 10px; */
+    }
+}
+
+
